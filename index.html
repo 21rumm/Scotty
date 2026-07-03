@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Scotty — A Small Note From a Former Owner</title>
+  <meta name="description" content="A small page from a former owner of a beloved car named Scotty. If you ever see this car, a photo or short message would mean a lot." />
+  <style>
+    :root {
+      --bg: #f6f4ef;
+      --surface: #fbfaf7;
+      --surface-2: #f0ece5;
+      --text: #22201b;
+      --muted: #6d6a63;
+      --border: #d9d4cb;
+      --accent: #0f6b6f;
+      --accent-hover: #0b5255;
+      --max: 980px;
+      --radius: 18px;
+      --shadow: 0 12px 32px rgba(40, 37, 29, 0.08);
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: linear-gradient(180deg, var(--bg), #ece7de);
+      color: var(--text);
+      line-height: 1.6;
+    }
+    .wrap {
+      max-width: var(--max);
+      margin: 0 auto;
+      padding: 24px;
+    }
+    .hero, .card, .footer {
+      background: rgba(251,250,247,0.92);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+    }
+    .hero {
+      padding: 42px 28px;
+      margin-top: 24px;
+    }
+    .eyebrow {
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--muted);
+      font-size: 0.82rem;
+      margin-bottom: 10px;
+    }
+    h1 {
+      font-size: clamp(2.1rem, 4vw, 4rem);
+      line-height: 1.05;
+      margin: 0 0 18px;
+    }
+    .lead {
+      font-size: 1.12rem;
+      max-width: 42rem;
+      color: #353129;
+      margin-bottom: 0;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 18px;
+      margin: 26px 0;
+    }
+    .photo {
+      background: var(--surface);
+      border: 1px dashed #bdb5a8;
+      border-radius: 16px;
+      overflow: hidden;
+      min-height: 220px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: var(--muted);
+      padding: 18px;
+    }
+    .photo img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+    .card {
+      padding: 26px;
+      margin: 22px 0;
+    }
+    h2 {
+      margin-top: 0;
+      font-size: 1.45rem;
+    }
+    p { margin: 0 0 14px; }
+    .small { color: var(--muted); font-size: 0.96rem; }
+    .button {
+      display: inline-block;
+      background: var(--accent);
+      color: white;
+      text-decoration: none;
+      padding: 14px 20px;
+      border-radius: 999px;
+      font-weight: 700;
+    }
+    .button:hover { background: var(--accent-hover); }
+    .footer {
+      padding: 20px 26px;
+      margin: 22px 0 34px;
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+    ul {
+      padding-left: 20px;
+      margin: 0;
+    }
+    code {
+      background: #f0ece5;
+      padding: 2px 6px;
+      border-radius: 6px;
+    }
+    @media (max-width: 640px) {
+      .hero, .card, .footer { padding-left: 18px; padding-right: 18px; }
+      .wrap { padding: 14px; }
+    }
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <section class="hero">
+      <div class="eyebrow">A note from a former owner</div>
+      <h1>Meet Scotty.</h1>
+      <p class="lead">This car meant a lot to me. I drove it for many years, gave it the nickname <strong>Scotty</strong>, and I still think about where it may be now. If you own this car now, or if you happen to see it somewhere in the world, a photo or short message would make me very happy.</p>
+    </section>
+
+    <section class="grid" aria-label="Old photos of Scotty">
+      <figure class="photo"><div>Photo 1 placeholder<br />Add one of your favorite old photos here.</div></figure>
+      <figure class="photo"><div>Photo 2 placeholder<br />Another memory of Scotty.</div></figure>
+      <figure class="photo"><div>Photo 3 placeholder<br />A road trip, a parking spot, or a detail shot.</div></figure>
+      <figure class="photo"><div>Photo 4 placeholder<br />Optional: replace or remove this block.</div></figure>
+    </section>
+
+    <section class="card">
+      <h2>Why this page exists</h2>
+      <p>I recently sold this car, and I was told it may continue its journey abroad. That felt strange and beautiful at the same time. This page is simply a friendly invitation: if Scotty is still out there and you come across it, I would love to know.</p>
+      <p class="small">No pressure, no obligation — just a small hello from a former owner who remembers this car fondly.</p>
+    </section>
+
+    <section class="card">
+      <h2>How to contact me</h2>
+      <p>The easiest way is by email. You can send a current photo, a short note, or just tell me in which country Scotty is today.</p>
+      <p><a class="button" href="mailto:21ulrich.meier@gmx.net">Send an email</a></p>
+      <p class="small">Please replace <code>YOUR-EMAIL@example.com</code> in the HTML file with your real address before uploading the page.</p>
+    </section>
+
+    <section class="card">
+      <h2>Before you upload</h2>
+      <ul>
+        <li>Replace the four photo placeholders with your own JPG or PNG images.</li>
+        <li>Update the email link with your real address.</li>
+        <li>If you want, add the car model, year, or country where you sold it.</li>
+        <li>Then upload this file to Cloudflare Pages using “Upload your static files”.</li>
+      </ul>
+    </section>
+
+    <div class="footer">
+      Made as a small memory page for a beloved car called Scotty.
+    </div>
+  </main>
+</body>
+</html>
